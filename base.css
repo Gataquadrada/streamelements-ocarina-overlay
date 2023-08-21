@@ -1,0 +1,236 @@
+body, html {
+	margin: 0;
+	padding: 0;
+}
+
+#board {
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.8);
+	border-radius: 3px;
+	color: #ffffff;
+	display: flex;
+	font-family: "CustomFont", "{{customFontFamily}}", sans-serif;
+	justify-content: center;
+	height: 180px;
+	left: 50%;
+	position: fixed;
+	top: 50%;
+	transform: translate(-50%,-50%) scale(calc({{size}} / 100));
+	transform-origin: center center;
+	width: {{customBackdropSize}};
+}
+
+#board > .title {
+	font-size: 25px;
+	height: 35px;
+	left: 10px;
+	overflow: hidden;
+	position: absolute;
+	top: 10px;
+	text-align: center;
+	white-space: nowrap;
+	word-wrap: none;
+	width: calc(100% - 20px);
+}
+#board > .title > span {
+	left: 0px;
+	position: absolute;
+	top: 0px;
+	text-align: center;
+	transform: translateY(120%);
+	transition: all 0.25s ease-in-out;
+	width: calc(100%);
+}
+#board > .title.title-2 {
+	font-size: 15px;
+	top: 45px;
+}
+#board > .title.title-2 > span {
+	transform: translateY(-120%);
+}
+#board > .title.is-open > span {
+	transform: translateY(0);
+}
+
+.n64-btn,
+.n64-btn-c {
+	align-items: center;
+	background-color: #ebef0a;
+	border-radius: 100%;
+	box-shadow: inset 0px 0px 10px #000000, 0px 0px 5px #000000;
+	cursor: pointer;
+	display: inline-flex;
+	font-size: 28px;
+	font-weight: 900;
+	height: 35px;
+	justify-content: center;
+	overflow: hidden;
+	position: relative;
+	width: 35px;
+}
+.n64-btn-a,
+.n64-btn-b {
+	font-family: sans-serif;
+	justify-content: start;
+}
+.n64-btn-a > span,
+.n64-btn-b > span {
+	left: 7px;
+	color: transparent;
+	position: absolute;
+	text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.1),
+		-1px -1px 0px rgba(0, 0, 0, 0.5);
+	top: -3px;
+}
+.n64-btn-a {
+	background-color: #4774c3;
+}
+.n64-btn-b {
+	/* background-color: #14b87d; */
+	background-color: #009952;
+}
+.n64-btn-c {
+	color: transparent;
+	font-size: 0;
+}
+.n64-btn-c::before {
+	content: "";
+	border: 8px solid red;
+	border-bottom-width: 15px;
+	border-color: transparent transparent #130e14 transparent;
+	display: block;
+	height: 0px;
+	left: 50%;
+	margin-top: -5px;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	transform-origin: center;
+	width: 0px;
+}
+.n64-btn-c.n64-btn-right::before {
+	border-color: transparent transparent transparent #130e14;
+	border-width: 8px;
+	border-left-width: 15px;
+	margin-top: 0;
+	margin-left: 6px;
+}
+.n64-btn-c.n64-btn-down::before {
+	border-color: #130e14 transparent transparent transparent;
+	border-width: 8px;
+	border-top-width: 15px;
+	margin-top: 5px;
+	margin-left: 0px;
+}
+.n64-btn-c.n64-btn-left::before {
+	border-color: transparent #130e14 transparent transparent;
+	border-width: 8px;
+	border-right-width: 15px;
+	margin-top: 0;
+	margin-left: -6px;
+}
+.n64-btn::after,
+.n64-btn-c::after {
+	content: "";
+	background-color: #ffffff;
+	height: 100%;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+#grid {
+	--note: 0;
+
+	align-items: center;
+	align-self: flex-end;
+	display: flex;
+	flex-direction: column;
+	isolation: isolate;
+	justify-content: center;
+	margin-bottom: 25px;
+	position: relative;
+	width: 500px;
+}
+#grid > .note {
+	left: 15px;
+	position: absolute;
+	z-index: 2;
+}
+#grid > .note svg {
+	height: calc(calc(7px * 4) + calc(13px * 3) + 20px);
+}
+#grid > .note path {
+	fill: #e96a24;
+	stroke: #e96a24;
+}
+#grid > .lines {
+	display: flex;
+	flex-direction: column;
+	gap: 13px;
+	width: 100%;
+	z-index: 1;
+}
+#grid > .lines > .line {
+	align-items: center;
+	border-radius: 3px;
+	box-shadow: inset 0px 0px 10px 0px rgb(120, 24, 28, 0.95),
+		0px 0px 4px 0px rgb(120, 24, 28, 0.9);
+	display: flex;
+	height: 7px;
+	width: 100%;
+}
+#btns {
+	height: 100%;
+	margin-left: 80px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 3;
+}
+#btns > .n64-btn,
+#btns > .n64-btn-c {
+	left: calc(calc(35px * var(--note)) + calc(15px * var(--note)));
+	margin-top: 2.5px;
+	opacity: 0;
+	position: absolute;
+	transform: translateY(-50%);
+	transition: all 0.25s ease-in;
+	top: 0;
+}
+#btns > .n64-btn-c.n64-btn-up {
+	top: 10px;
+}
+#btns > .n64-btn-c.n64-btn-right {
+	top: 40px;
+}
+#btns > .n64-btn-c.n64-btn-down {
+	top: 52px;
+}
+#btns > .n64-btn-c.n64-btn-left {
+	top: 27px;
+}
+#btns > .n64-btn.n64-btn-a,
+#btns > .n64-btn.n64-btn-b {
+	top: 65px;
+}
+
+#grid.is-flashing > #btns > .n64-btn::after,
+#grid.is-flashing > #btns > .n64-btn-c::after {
+	animation: 0.4s n64-btn-flash infinite linear;
+}
+
+@keyframes n64-btn-flash {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 0.7;
+	}
+	100% {
+		opacity: 0;
+	}
+}

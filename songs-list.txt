@@ -1,0 +1,51 @@
+Zelda's Lullaby
+01.zeldas-lullaby
+left,up,right,left,up,right
+
+Epona's Song
+02.eponas-song
+up,left,right,up,left,right
+
+Saria's Song
+03.sarias-song
+down,right,left,down,right,left
+
+Sun's Song
+04.suns-song
+right,down,up,right,down,up
+
+Song of Time
+05.song-of-time
+right,a,down,right,a,down
+
+Song of Storms
+06.song-of-storms
+a,down,up,a,down,up
+
+Minuet of Forest
+07.minuet-of-forest
+a,up,left,right,left,right
+
+Bolero of Fire
+08.bolero-of-fire
+down,a,down,a,right,down,right,down
+
+Serenade of Water
+09.serenade-of-water
+a,down,right,right,left
+
+Nocturne of Shadow
+10.nocturne-of-shadow
+left,right,right,a,left,right,down
+
+Requiem of Spirit
+11.requiem-of-spirit
+a,down,a,right,down,a
+
+Prelude of Light
+12.prelude-of-light
+up,right,up,right,left,up
+
+
+
+
