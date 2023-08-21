@@ -24,6 +24,14 @@ const customKeys = {}
 	customKeys[key] = "c-left"
 })
 
+"{{customKeysA}}".split(",").forEach(function (key, i) {
+	customKeys[key] = "a"
+})
+
+"{{customKeysB}}".split(",").forEach(function (key, i) {
+	customKeys[key] = "b"
+})
+
 const customSongs = "{{songs}}".split(",")
 const songsTitles = "{{songsTitles}}".split(",")
 

@@ -1,3 +1,7 @@
+![screenshot_0.png](img/screenshot_0.png)
+
+<br>
+
 # Summary
 
 -   [StreamElements - Before Starting](https://dev.streamelements.com/docs/widgets/3cf52461e4e34-before-starting)
@@ -87,4 +91,4 @@ A: The internet. But I also left a [convenient file](copy-these-combos.txt), in 
 -   [Follow me on Twitter](https://twitter.com/gataquadrada)
 -   [Follow me on Twitch](https://twitch.tv/gataquadrada)
 -   [Join my Discord](https://discord.gg/eYfSNQT)
--   [Get sub emotes on my old channel](https://twitch.tv/gataquadrada)
+-   [Get sub emotes on my channel](https://twitch.tv/gataquadrada)

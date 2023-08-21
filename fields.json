@@ -69,6 +69,16 @@
 		"label": "Aliases for [C-LEFT]",
 		"value": "left,l,⬅️,←"
 	},
+	"customKeysA": {
+		"type": "text",
+		"label": "Aliases for [A]",
+		"value": "a,🅰️,🔠,🔡"
+	},
+	"customKeysB": {
+		"type": "text",
+		"label": "Aliases for [B]",
+		"value": "b,🅱️,✌🏼"
+	},
 	"songs": {
 		"type": "sound-input",
 		"label": "Songs (order matters)",
