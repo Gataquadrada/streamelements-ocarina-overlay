@@ -45,6 +45,15 @@
 		"label": "Custom font Family",
 		"value": ""
 	},
+	"hideBackground": {
+		"type": "dropdown",
+		"label": "Hide background?",
+		"value": "",
+		"options": {
+			"": "No",
+			"hide-background": "Yes"
+		}
+	},
 	"soundConfirm": {
 		"type": "sound-input",
 		"label": "Song found effect"

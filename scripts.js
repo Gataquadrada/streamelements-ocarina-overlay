@@ -159,7 +159,13 @@ function checkSong() {
 
 	grid.classList.add("is-flashing")
 
-	if (SOUND_CORRECT && "" !== SOUND_CORRECT && "null" !== SOUND_CORRECT) {
+	if (
+		SOUND_CORRECT &&
+		"" !== SOUND_CORRECT &&
+		"null" !== SOUND_CORRECT &&
+		undefined !== SOUND_CORRECT &&
+		"undefined" !== SOUND_CORRECT
+	) {
 		const audioCorrect = new Audio(SOUND_CORRECT)
 
 		audioCorrect.volume = parseInt("{{volume}}") / 100

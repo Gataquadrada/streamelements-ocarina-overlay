@@ -20,6 +20,10 @@ body, html {
 	width: {{customBackdropSize}};
 }
 
+#board.hide-background {
+	background-color: transparent;
+}
+
 #board > .title {
 	font-size: 25px;
 	height: 35px;
