@@ -1,118 +1,124 @@
 {
-	"customTitle": {
-		"type": "text",
-		"label": "Title",
-		"value": "Play by typing in chat"
-	},
-	"customSubtitle": {
-		"type": "text",
-		"label": "Subtitle",
-		"value": "Up, Down, Right, Left, A, B"
-	},
-	"volume": {
-		"type": "slider",
-		"label": "Volume",
-		"value": 100,
-		"min": 0,
-		"max": 100,
-		"step": 1
-	},
-	"size": {
-		"type": "slider",
-		"label": "Size",
-		"value": 100,
-		"min": 0,
-		"max": 500,
-		"step": 1
-	},
-	"customBackdropSize": {
-		"type": "text",
-		"label": "Backdrop size (PX / %)",
-		"value": "725px"
-	},
-	"defaultFont": {
-		"type": "googleFont",
-		"label": "Select a font",
-		"value": "Roboto Mono"
-	},
-	"customFontURL": {
-		"type": "text",
-		"label": "Custom font URL",
-		"value": ""
-	},
-	"customFontFamily": {
-		"type": "text",
-		"label": "Custom font Family",
-		"value": ""
-	},
-	"hideBackground": {
-		"type": "dropdown",
-		"label": "Hide background?",
-		"value": "",
-		"options": {
-			"": "No",
-			"hide-background": "Yes"
-		}
-	},
-	"soundConfirm": {
-		"type": "sound-input",
-		"label": "Song found effect"
-	},
-	"customKeysUp": {
-		"type": "text",
-		"label": "Aliases for [C-UP]",
-		"value": "up,u,⬆️,↑"
-	},
-	"customKeysRight": {
-		"type": "text",
-		"label": "Aliases for [C-RIGHT]",
-		"value": "right,r,➡️,→"
-	},
-	"customKeysDown": {
-		"type": "text",
-		"label": "Aliases for [C-DOWN]",
-		"value": "down,d,⬇️,↓"
-	},
-	"customKeysLeft": {
-		"type": "text",
-		"label": "Aliases for [C-LEFT]",
-		"value": "left,l,⬅️,←"
-	},
-	"customKeysA": {
-		"type": "text",
-		"label": "Aliases for [A]",
-		"value": "a,🅰️,🔠,🔡"
-	},
-	"customKeysB": {
-		"type": "text",
-		"label": "Aliases for [B]",
-		"value": "b,🅱️,✌🏼"
-	},
-	"songs": {
-		"type": "sound-input",
-		"label": "Songs (order matters)",
-		"multiple": true
-	},
-	"songsTitles": {
-		"type": "text",
-		"label": "Titles (same order as songs)",
-		"value": "Zelda's Lullaby,Epona's Song,Saria's Song,Sun's Song,Song of Time,Song of Storms,Minuet of Forest,Bolero of Fire,Serenade of Water,Nocturne of Shadow,Requiem of Spirit,Prelude of Light"
-	},
-	"songsCombos": {
-		"type": "text",
-		"label": "Combos (same order as songs)",
-		"value": "l-u-r-l-u-r,u-l-r-u-l-r,d-r-l-d-r-l,r-d-u-r-d-u,r-a-d-r-a-d,a-d-u-a-d-u,a-u-l-r-l-r,d-a-d-a-r-d-r-d,a-d-r-r-l,l-r-r-a-l-r-d,a-d-a-r-d-a,u-r-u-r-l-u"
-	},
-	"allowFullCombo": {
-		"type": "checkbox",
-		"label": "Allow full combos in the same message."
-	},
-	"widgetName": {
-		"type": "hidden",
-		"value": "Ocarina [GataQuadrada]"
-	},
-	"widgetAuthor ": {
-		"type": "hidden",
-		"value": "GataQuadrada"
-	}
+    "customTitle": {
+        "type": "text",
+        "label": "Title",
+        "value": "Play by typing in chat"
+    },
+    "customSubtitle": {
+        "type": "text",
+        "label": "Subtitle",
+        "value": "Up, Down, Right, Left, A, B"
+    },
+    "volume": {
+        "type": "slider",
+        "label": "Volume",
+        "value": 100,
+        "min": 0,
+        "max": 100,
+        "step": 1
+    },
+    "size": {
+        "type": "slider",
+        "label": "Size",
+        "value": 100,
+        "min": 0,
+        "max": 500,
+        "step": 1
+    },
+    "customBackdropSize": {
+        "type": "text",
+        "label": "Backdrop size (PX / %)",
+        "value": "725px"
+    },
+    "defaultFont": {
+        "type": "googleFont",
+        "label": "Select a font",
+        "value": "Roboto Mono"
+    },
+    "customFontURL": {
+        "type": "text",
+        "label": "Custom font URL",
+        "value": ""
+    },
+    "customFontFamily": {
+        "type": "text",
+        "label": "Custom font Family",
+        "value": ""
+    },
+    "hideBackground": {
+        "type": "dropdown",
+        "label": "Hide background?",
+        "value": "",
+        "options": {
+            "": "No",
+            "hide-background": "Yes"
+        }
+    },
+    "soundConfirm": {
+        "type": "sound-input",
+        "label": "Song found effect"
+    },
+    "customKeysUp": {
+        "type": "text",
+        "label": "Aliases for [C-UP]",
+        "value": "up,u,⬆️,↑"
+    },
+    "customKeysRight": {
+        "type": "text",
+        "label": "Aliases for [C-RIGHT]",
+        "value": "right,r,➡️,→"
+    },
+    "customKeysDown": {
+        "type": "text",
+        "label": "Aliases for [C-DOWN]",
+        "value": "down,d,⬇️,↓"
+    },
+    "customKeysLeft": {
+        "type": "text",
+        "label": "Aliases for [C-LEFT]",
+        "value": "left,l,⬅️,←"
+    },
+    "customKeysA": {
+        "type": "text",
+        "label": "Aliases for [A]",
+        "value": "a,🅰️"
+    },
+    "customKeysB": {
+        "type": "text",
+        "label": "Aliases for [B]",
+        "value": "b,🅱️"
+    },
+    "songs": {
+        "type": "sound-input",
+        "label": "Songs (order matters)",
+        "multiple": true
+    },
+    "songsTitles": {
+        "type": "text",
+        "label": "Titles (same order as songs)",
+        "value": "Zelda's Lullaby,Epona's Song,Saria's Song,Sun's Song,Song of Time,Song of Storms,Minuet of Forest,Bolero of Fire,Serenade of Water,Nocturne of Shadow,Requiem of Spirit,Prelude of Light"
+    },
+    "songsCombos": {
+        "type": "text",
+        "label": "Combos (same order as songs)",
+        "value": "l-u-r-l-u-r,u-l-r-u-l-r,d-r-l-d-r-l,r-d-u-r-d-u,r-a-d-r-a-d,a-d-u-a-d-u,a-u-l-r-l-r,d-a-d-a-r-d-r-d,a-d-r-r-l,l-r-r-a-l-r-d,a-d-a-r-d-a,u-r-u-r-l-u"
+    },
+    "comboMode": {
+        "type": "dropdown",
+        "label": "Combo mode",
+        "options": {
+            "full": "Allow full combos in the same message (comma or dash).",
+            "strict": "Message has to match a button/combo",
+            "loose": "Tolerate as much as possible"
+        },
+        "value": "strict"
+    },
+    "widgetName": {
+        "type": "hidden",
+        "value": "Ocarina [GataQuadrada]"
+    },
+    "widgetAuthor ": {
+        "type": "hidden",
+        "value": "GataQuadrada"
+    }
 }
